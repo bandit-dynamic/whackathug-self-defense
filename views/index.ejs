@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WHACK-A-THUG APP WITH MONGODB</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <h1>Whack-A-Thug <br> List of Moves</h1>
+        <!-- <a class= "createMove" href="/moves/new">Create a New Move</a> -->
+        <ul>
+            <% for(let i=0; i < moves.length; i++) { %>
+                <li class="indexList"> 
+                    
+                   <a href="/moves/<%=moves[i].id; %>">
+                        <%=moves[i].name; %>
+                    </a>
+                    
+                    <!-- <a href="/moves/<%=moves[i].id%>/edit">Edit</a> <br>
+                    Description: is  <%=moves[i].description; %>. -->
+                
+                    <% if(moves[i].thumbsUp === true){ %> <br>
+                        Rating: It is highly rated
+                    <% } else { %> <br>
+                        Rating: It is not highly rated
+                    <% } %>
+                    <!-- <form action="/moves/<%=moves[i].id%>?_method=DELETE" method="POST">
+                        <input type="submit" value="Delete"> -->
+                    </form>
+                </li>
+            <% } %>
+        </ul>
+        <%- include('../partials/footer.ejs') %>
+    </body>
+</html>

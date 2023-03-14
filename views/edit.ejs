@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WHACK-A-THUG APP WITH MONGODB</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <%- include('../partials/header.ejs') %>
+    <h1>Edit Whack-A-Thug <br> Moves Page</h1>
+
+    <form action="/MOVES/<%= moves.id %>?_method=PUT" method="POST">
+      Name: <input type="text" name="name" value="<%= moves.name %>"> <br/>
+      Description: <input type="text" name="description" value="<%= moves.description %>"> <br/>
+      Comments: <input type="text" name="comments" value="<%= moves.comments %>"> <br/>
+      Thumbs Up: <input type="checkbox" name="thumbs up" value="<%= moves.thumbsUp %>"> <br/>
+      <% if(moves.thumbsUp) { %> 
+      <% } %>
+      <br/>
+      <input type="text" name="link" value="<%=moves.link%>" ><br>
+
+      <input type="submit" value="Edit Moves">
+    </form>
+    <%- include('../partials/footer.ejs') %>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WHACK-A-THUG APP WITH MONGODB</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <h1>Whack-A-Thug</h1>
+        The <%=moves.name; %> is  <%=moves.description; %>.
+        <% if(moves.thumbsUp === true){ %>
+            It is highly rated
+        <% } else { %>
+            It is not highly rated <br>
+            Comments: <%= moves.comments %>
+            <% console.log(moves.link) %>
+        <% } %>
+
+        <div> 
+            <iframe width="1000" height="650" src="<%=moves.link%>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </div>
+
+        <nav>
+            <a class="backToIndex" href="/moves">Back to Whack-A-Thug Index</a>
+            <%- include('../partials/footer.ejs') %>
+        </nav>
+    </body>
+</html>

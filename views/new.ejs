@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Whack-A-Thug Moves List</title>
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+	<body>
+		<%- include('../partials/header.ejs') %>
+		<h1>Whack-A-Thug Moves Page</h1>
+		<form action="/moves" method="POST">
+			Name: <input type="text" name="name" /><br />
+			Description: <input type="text" name="description" /><br />
+			Comments: <input type="text" name="comments" /><br />
+			Thumbs Up: <input type="checkbox" name="thumbsUp" /><br />
+			Link: <input type="url" name="<%=moves.link%>" /><br />
+			<input type="submit" name="" value="Add Moves" />
+		</form>
+		<%- include('../partials/footer.ejs') %>
+	</body>
+</html>
