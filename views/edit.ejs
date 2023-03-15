@@ -7,7 +7,7 @@
   </head>
   <body>
     <%- include('../partials/header.ejs') %>
-    <h1>Edit Whack-A-Thug <br> Moves Page</h1>
+    <h1 class="showTitle">Whack-A-Thug</h1>
 
     <form action="/MOVES/<%= moves.id %>?_method=PUT" method="POST">
       Name: <input type="text" name="name" value="<%= moves.name %>"> <br/>
@@ -21,6 +21,7 @@
 
       <input type="submit" value="Edit Moves">
     </form>
-    <%- include('../partials/footer.ejs') %>
+    
   </body>
+  <%- include('../partials/footer.ejs') %>
 </html>

@@ -7,24 +7,39 @@
     </head>
     <body>
         <%- include('../partials/header.ejs') %>
-        <h1>Whack-A-Thug</h1>
-        The <%=moves.name; %> is  <%=moves.description; %>.
-        <% if(moves.thumbsUp === true){ %>
-            It is highly rated
-        <% } else { %>
-            It is not highly rated <br>
-            Comments: <%= moves.comments %>
-            <% console.log(moves.link) %>
-        <% } %>
+        <h1 class="showTitle">Whack-A-Thug</h1>
+        
 
         <div> 
             <iframe width="1000" height="650" src="<%=moves.link%>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
         </div>
 
+        <div class="comRateDisc">
+        <!-- <h4 class="commentRating"> -->
+            <h3>Description: The <%=moves.name; %> is  <%=moves.description; %>.</h3>  <br>
+            <h3><% if(moves.thumbsUp === true){ %> 
+            It is highly rated
+            <% } else { %>
+            It is not highly rated <br>
+            <!-- <% console.log(moves.link) %> -->
+            <% } %> </h3>
+            <h3>Comments: <%= moves.comments %> </h3> 
+        </div>
+
         <nav>
             <a class="backToIndex" href="/moves">Back to Whack-A-Thug Index</a>
             <%- include('../partials/footer.ejs') %>
+
+            <a  class="editMoves" href="/moves/<%=moves.id%>/edit">Edit</a> <br>
+            Description: is  <%=moves.description; %>
+
+            <form action="/moves/<%=moves.id%>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete"></form>
+
+
         </nav>
+        
     </body>
+    <%- include('../partials/footer.ejs') %>
 </html>

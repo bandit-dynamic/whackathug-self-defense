@@ -21,20 +21,47 @@ h1 {
   font-size: 60px;
 }
 
+.ratingH4 {
+  position: relative;
+  font-size: 50px;
+  bottom: 111px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  padding: 10px;
+  column-gap: 50px;
+}
+
+.column {
+    border-radius: 0.6rem;
+    padding: 10px;
+    /* font-size: 30px; */
+    text-align: center;
+}
+
+.movesClass {
+  color: rgb(71 195 143 / 91%);
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  position: relative;
+  /* bottom: 111px; */
+  font-size: 45px;
+}
+
 nav {
   margin-top: 27px;
   margin-bottom: 27px;
 }
 
-a {
+.navBarA {
   color: rgb(71 195 143 / 91%);
   text-decoration: none;
   text-shadow: 1px 1px 1px black;
-  font-size: 60px;
-  /* background: rgba(193, 235, 187, .9); */
+  font-size: 45px;
   padding: .25em;
-  /* margin: 0 30 0 0; */
-
+  position: relative;
 }
 
 .backToIndex {
@@ -42,7 +69,7 @@ a {
 }
 
 a:hover {
-  color: ghostwhite;
+  color: chocolate;
 }
 
 li {
@@ -63,18 +90,72 @@ input[type=text] {
 
 input[type=submit] {
   padding: .3em;
-  color: orange;
+  color: #22211e;
   background: mediumseagreen;
-  font-size: 1em;
-  border-radius: 10%;
+  font-size: 25px;
+  border-radius: 1.2rem;
 }
+
+input[type=submit]:hover {
+  background-color: chocolate;
+  color: white;
+} 
 
 iframe {
     position: relative;
-    /* left: 100px; */
+    border-radius: 1.2rem;
     
 }
 
 footer {
   margin-top:150px;
+}
+
+.commentRating {
+  font-size: 30px;
+}
+
+.comRateDisc {
+  margin-top: 50px;
+}
+
+.showTitle {
+  position: relative;
+  top: -70px
+}
+
+label {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 20px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 312px;
+  height: 50px;
+  margin-left: 11px;
+}
+
+.input1 {
+  position: relative;
+  top: -7px;
+  left: 5px;
+}
+
+/* .input2 {
+  position: relative;
+  top: 20px;
+  font-size: 60px;
+  color:black;
+  background-color: black;
+  width: 30px; 
+} */
+
+.input3 {
+  position: relative;
+  right: 138px;
+  bottom: -11px;
 }

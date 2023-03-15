@@ -6,15 +6,18 @@
 	</head>
 	<body>
 		<%- include('../partials/header.ejs') %>
-		<h1>Whack-A-Thug Moves Page</h1>
+		<h1 class="showTitle">Whack-A-Thug</h1>
 		<form action="/moves" method="POST">
-			Name: <input type="text" name="name" /><br />
-			Description: <input type="text" name="description" /><br />
-			Comments: <input type="text" name="comments" /><br />
-			Thumbs Up: <input type="checkbox" name="thumbsUp" /><br />
-			Link: <input type="url" name="<%=moves.link%>" /><br />
-			<input type="submit" name="" value="Add Moves" />
+			
+			<label for="Name"><strong>Name:</strong> <input class="input1" type="text" name="name"><br> </label>
+			<label for="Description"><strong>Description:</strong> <input class="input1" type="text" name="description"> <br> </label>
+			<label for="Comments"><strong>Comments:</strong> <input class="input1" type="text" name="comments"> <br> </label>
+			<label for="link"><strong>Link:</strong> <input class="input1" type="url" name="link" /><br /> </label>
+			<label for="thumbsUp"><strong>Thumbs Up:</strong> <input class="input3" type="checkbox" name="thumbsUp"> <br> </label>
+			<input class="input2" type="submit" value="Add Moves">
+
 		</form>
-		<%- include('../partials/footer.ejs') %>
+		
 	</body>
+	<%- include('../partials/footer.ejs') %>
 </html>
