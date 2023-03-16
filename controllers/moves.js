@@ -20,6 +20,11 @@ const authRequired = (req, res, next) => {
 }
 
 // ROUTES 
+// Login
+router.get('/login', (req, res) => {
+	res.render('login.ejs')
+})
+
 // About
 router.get('/about', (req, res) => {
  	res.render('about.ejs')

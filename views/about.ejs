@@ -2,14 +2,23 @@
 <html lang="en">
 <head>
     <title>About Me</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <h1>About Me</h1>
-    <p>Greetings! I'm a developer with a passion for all things weird and wonderful.</p>
-    <p>When I'm not coding, you can usually find me cexploring abandoned buildings or searching for hidden treasure in the city.</P>
-    <p>Thanks for stopping by my little corner of the internet. If you want to chat about code, weird hobbies, or anything in between, feel free to drop me a line!</p>
+<%- include('../partials/header.ejs') %>
+<body class="aboutBigBody">
+    <div class="aboutBody">
+        <h1 class="aboutTitle">About Me</h1>
 
-    
+        <div class="paragraph">
+            <p class="aboutLine"><strong>
+            Greetings! I'm a developer with a passion for all things weird and wonderful.</strong></p>
+            <p class="aboutLine"> <strong>When I'm not coding, you can usually find me exploring abandoned buildings or searching for hidden treasure in the city.</strong></P>
+            <p class="aboutLine"><strong>Thanks for stopping by my little corner of the internet. If you want to chat about code, weird hobbies, or anything in between, feel free to drop me a line!</strong></p>
+        </div>
+
+    </div>
+
+
+    <%- include('../partials/footer.ejs') %>
 </body>
-<%- include('../partials/footer.ejs') %>
 </html>

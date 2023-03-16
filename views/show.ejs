@@ -27,19 +27,18 @@
             <h3>Comments: <%= moves.comments %> </h3> 
         </div>
 
-        <nav>
-            <a class="backToIndex" href="/moves">Back to Whack-A-Thug Index</a>
-            <%- include('../partials/footer.ejs') %>
-
+        <nav class="showNav">
             <a  class="editMoves" href="/moves/<%=moves.id%>/edit">Edit</a> <br>
-            Description: is  <%=moves.description; %>
+            <!-- <div class="showDisc">Description: is  <%=moves.description; %> </div> -->
 
             <form action="/moves/<%=moves.id%>?_method=DELETE" method="POST">
             <input type="submit" value="Delete"></form>
 
+            <a class="backToIndex" href="/moves">Back to Whack-A-Thug Index</a>
+
 
         </nav>
-        
+        <%- include('../partials/footer.ejs') %> 
     </body>
-    <%- include('../partials/footer.ejs') %>
+
 </html>
