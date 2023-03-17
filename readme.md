@@ -15,7 +15,10 @@ Whack-A-Thug Self Defense: a self-defense inspired webapp/site
 This site provides users with videos to assist them in defending themselves against would-be attackers, in a variety of environments and scenarios. Users can rate and comment on each video, based on how well the defense worked or didn't work.
 
 ## Wire Frames:
-<img width="1017" alt="wireframes" src="public/images/wireframes.png">
+<img width="1017" alt="wireframe slide 1" src="public/images/image.png">
+<img width="1017" alt="wireframe slide 2" src="public/images/image (1).png">
+<img width="1017" alt="wireframe slide 3" src="public/images/image (2).png">
+<img width="1017" alt="wireframe slide 4" src="public/images/image (3).png">
 
 ### MVP Goals:
 A fully functioning basic CRUD app
