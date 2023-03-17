@@ -147,7 +147,7 @@ router.delete('/:id', (req, res) => {
 
 // make an edit page and a route to it 
 // create an edit.ejs view 
-// link to the edit page from each of the fruits 
+// link to the edit page from each of the moves 
 router.get('/:id/edit', authRequired, (req, res) => {
 	Moves.findById(req.params.id, (err, foundMoves) => {
 		if(err) {
