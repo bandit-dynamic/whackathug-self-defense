@@ -97,14 +97,26 @@ input[type=submit] {
   font-size: 25px;
   border-radius: 1.2rem;
   position: relative;
-  bottom: 233px;
-  width: 113px;
+  bottom: 7px;
+  width: 153px;
 }
 
 input[type=submit]:hover {
   background-color: chocolate;
   color: white;
 } 
+
+input[type="checkbox" i] {
+  background-color: initial;
+  position: relative;
+  right: 122px;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+}
 
 iframe {
     position: relative;
